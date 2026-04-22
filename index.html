@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khoan Giếng Sạch – Thi Công Nhanh, Bảo Hành Dài Hạn</title>
+  <meta name="description"
+    content="Dịch vụ khoan giếng nước ngầm uy tín tại miền Trung. Thi công nhanh trong ngày, bảo hành 5 năm, giá cạnh tranh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-drop"></div>
+      <span>Đang tải...</span>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- STICKY HEADER -->
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-icon">💧</div>
+        <div>
+          <span class="logo-brand">Khoan Giếng</span>
+          <span class="logo-tagline">Sạch &amp; Bền</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#solution">Dịch vụ</a>
+        <a href="#process">Quy trình</a>
+        <a href="#testimonials">Khách hàng</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <a href="tel:0962873986" class="btn btn-header">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6.16 6.16l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Gọi Ngay
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#solution" onclick="closeMobileNav()">Dịch vụ</a>
+      <a href="#process" onclick="closeMobileNav()">Quy trình</a>
+      <a href="#testimonials" onclick="closeMobileNav()">Khách hàng</a>
+      <a href="#contact" onclick="closeMobileNav()">Liên hệ</a>
+      <a href="tel:0962873986" class="btn btn-cta" style="text-align:center;">📞 0962 873 986</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80" alt="Nước sạch"
+        loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content fade-in">
+      <div class="hero-badge">✅ Hơn 2.000 công trình hoàn thành</div>
+      <h1 class="hero-title">
+        Nước Sạch Tận Nơi –<br />
+        <span class="hero-highlight">Khoan Ngay Hôm Nay</span>
+      </h1>
+      <p class="hero-sub">
+        Dịch vụ khoan giếng nước ngầm chuyên nghiệp, thi công nhanh trong ngày.<br />
+        Bảo hành <strong>5 năm</strong>, miễn phí tư vấn, giá cạnh tranh nhất khu vực.
+      </p>
+      <div class="hero-cta">
+        <a href="tel:0962873986" class="btn btn-cta btn-lg">
+          📞 Gọi Tư Vấn Miễn Phí
+        </a>
+        <a href="https://zalo.me/0962873986" class="btn btn-zalo btn-lg" target="_blank">
+          <img
+            src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
+            alt="Zalo" width="22" height="22" />
+          Chat Zalo
+        </a>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-item">
+          <span class="trust-icon">🏆</span>
+          <span>15 năm kinh nghiệm</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🛡️</span>
+          <span>Bảo hành 5 năm</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⚡</span>
+          <span>Thi công trong ngày</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">💯</span>
+          <span>2.000+ công trình</span>
+        </div>
+      </div>
+    </div>
+    <a href="#problems" class="hero-scroll">
+      <span>Tìm hiểu thêm</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== PROBLEMS ===== -->
+  <section id="problems" class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Vấn đề thường gặp</div>
+        <h2 class="section-title">Bạn Đang Gặp Khó Khăn Này?</h2>
+        <p class="section-sub">Hàng nghìn gia đình đã từng như bạn – và chúng tôi đã giúp họ thoát ra</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card fade-in">
+          <div class="problem-icon">💧</div>
+          <h3>Nước máy yếu hoặc cúp liên tục</h3>
+          <p>Sinh hoạt bị gián đoạn, không chủ động được nguồn nước cho cả gia đình.</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon">💸</div>
+          <h3>Hóa đơn nước tháng nào cũng cao</h3>
+          <p>Chi phí nước sinh hoạt ngày càng đắt, ảnh hưởng trực tiếp đến kinh tế gia đình.</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon">🟤</div>
+          <h3>Nước có màu vàng, mùi lạ</h3>
+          <p>Nước từ nguồn cũ bị nhiễm khuẩn, ảnh hưởng sức khỏe cả nhà, đặc biệt trẻ em.</p>
+        </div>
+        <div class="problem-card fade-in">
+          <div class="problem-icon">🏗️</div>
+          <h3>Cần nước cho công trình, trang trại</h3>
+          <p>Sản xuất nông nghiệp, xây dựng cần lượng nước lớn mà nước máy không đáp ứng được.</p>
+        </div>
+      </div>
+      <div class="problems-cta fade-in">
+        <p>Nếu bạn gặp bất kỳ vấn đề nào trên, <strong>chúng tôi có giải pháp ngay hôm nay.</strong></p>
+        <a href="tel:0962873986" class="btn btn-cta">Gọi Ngay – Tư Vấn Miễn Phí</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section id="solution" class="section section-blue">
+    <div class="container">
+      <div class="solution-inner">
+        <div class="solution-media fade-in">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Máy khoan giếng" />
+          <div class="solution-stat-card">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Khách hàng hài lòng</span>
+          </div>
+        </div>
+        <div class="solution-content fade-in">
+          <div class="section-eyebrow">Giải pháp của chúng tôi</div>
+          <h2 class="section-title">Giếng Khoan Sâu –<br />Nước Sạch Quanh Năm</h2>
+          <p class="solution-desc">
+            Chúng tôi sử dụng máy khoan hiện đại, đội ngũ thợ lành nghề hơn 15 năm kinh nghiệm,
+            đảm bảo mỗi giếng đạt chuẩn chất lượng nước sinh hoạt theo quy định Bộ Y tế.
+          </p>
+          <ul class="solution-list">
+            <li>
+              <span class="check-icon">✓</span>
+              <span><strong>Khoan sâu 30–150m</strong> – tùy địa tầng thực tế tại khu vực</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span><strong>Thiết bị hiện đại</strong> – ít tiếng ồn, không ảnh hưởng công trình lân cận</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span><strong>Xử lý nước toàn diện</strong> – lọc phèn, khử khuẩn, làm mềm nước</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span><strong>Bảo hành 5 năm</strong> – miễn phí bảo trì, sửa chữa trong thời gian bảo hành</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span><strong>Báo giá minh bạch</strong> – không phát sinh chi phí ẩn sau khi ký hợp đồng</span>
+            </li>
+          </ul>
+          <a href="tel:0962873986" class="btn btn-cta">Nhận Báo Giá Ngay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section id="why" class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Tại sao chọn chúng tôi</div>
+        <h2 class="section-title">4 Lý Do Khách Hàng Tin Tưởng</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-num">01</div>
+          <div class="why-icon">🏅</div>
+          <h3>Kinh Nghiệm 15 Năm</h3>
+          <p>Hơn 2.000 công trình đã hoàn thành tại các tỉnh miền Trung, không công trình nào thất bại.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-num">02</div>
+          <div class="why-icon">⚡</div>
+          <h3>Thi Công Nhanh</h3>
+          <p>Thông thường hoàn thành trong 1 ngày làm việc. Không để bạn chờ đợi lâu hơn cần thiết.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-num">03</div>
+          <div class="why-icon">💎</div>
+          <h3>Bảo Hành 5 Năm</h3>
+          <p>Bảo hành dài nhất trong ngành. Cam kết hỗ trợ miễn phí nếu có sự cố trong thời gian bảo hành.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-num">04</div>
+          <div class="why-icon">📋</div>
+          <h3>Giá Minh Bạch</h3>
+          <p>Báo giá chi tiết từng hạng mục trước khi thi công. Không phát sinh chi phí không báo trước.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow" style="color: var(--accent);">Quy trình làm việc</div>
+        <h2 class="section-title" style="color:#fff;">4 Bước Đơn Giản – Có Nước Ngay</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step fade-in">
+          <div class="step-line"></div>
+          <div class="step-circle">1</div>
+          <div class="step-content">
+            <div class="step-icon">📞</div>
+            <h3>Liên Hệ Tư Vấn</h3>
+            <p>Gọi điện hoặc nhắn Zalo. Chúng tôi tư vấn miễn phí, trả lời mọi thắc mắc ngay lập tức.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in">
+          <div class="step-line"></div>
+          <div class="step-circle">2</div>
+          <div class="step-content">
+            <div class="step-icon">🔍</div>
+            <h3>Khảo Sát Tại Nhà</h3>
+            <p>Kỹ thuật viên đến tận nơi khảo sát địa hình, địa chất miễn phí và báo giá chính xác.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in">
+          <div class="step-line"></div>
+          <div class="step-circle">3</div>
+          <div class="step-content">
+            <div class="step-icon">⚙️</div>
+            <h3>Thi Công Nhanh</h3>
+            <p>Đội thợ chuyên nghiệp, máy móc hiện đại. Hoàn thành đúng tiến độ cam kết, thường trong 1 ngày.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in">
+          <div class="step-line last"></div>
+          <div class="step-circle">4</div>
+          <div class="step-content">
+            <div class="step-icon">✅</div>
+            <h3>Nghiệm Thu &amp; Bàn Giao</h3>
+            <p>Kiểm tra chất lượng nước, hướng dẫn sử dụng, ký hợp đồng bảo hành. Bạn có nước sạch ngay.</p>
+          </div>
+        </div>
+      </div>
+      <div class="process-cta fade-in">
+        <a href="tel:0962873986" class="btn btn-cta btn-lg">Bắt Đầu Ngay – Gọi Miễn Phí</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Công trình thực tế</div>
+        <h2 class="section-title">Những Công Trình Đã Hoàn Thành</h2>
+        <p class="section-sub">Minh bạch – thực tế – không photoshop</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in tall">
+          <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80" alt="Công trình 1"
+            loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Khoan giếng hộ gia đình – Thanh Hoá</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Công trình 2"
+            loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Lắp đặt hệ thống lọc nước</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Công trình 3"
+            loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Khoan giếng trang trại – Nghệ An</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in wide">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80" alt="Công trình 4"
+            loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Công trình khoan công nghiệp – Hà Tĩnh</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1504615458222-979e04d69a27?w=600&q=80" alt="Công trình 5"
+            loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Hệ thống giếng khu dân cư</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section section-blue">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Khách hàng nói gì</div>
+        <h2 class="section-title">Hơn 2.000 Gia Đình Đã Tin Tưởng</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in featured">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Gọi sáng, chiều đã có thợ đến. Khoan xong trong 1 ngày, nước trong vắt. Gia đình tôi dùng được
+            gần 2 năm rồi, không có vấn đề gì. Giá cả hợp lý, anh em làm việc chuyên nghiệp và sạch sẽ."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">NV</div>
+            <div>
+              <strong>Nguyễn Văn Tùng</strong>
+              <span>Hộ gia đình – Thanh Hoá</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Trước đây nhà tôi dùng nước máy tốn hơn 500k/tháng. Sau khi khoan giếng, hóa đơn điện bơm chỉ
+            khoảng 80k. Tiết kiệm được rất nhiều, nước còn sạch và mát hơn."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">TL</div>
+            <div>
+              <strong>Trần Thị Lan</strong>
+              <span>Hộ gia đình – Nghệ An</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Trang trại rau của tôi cần lượng nước lớn. Anh em tư vấn khoan 2 giếng sâu 80m, cung cấp đủ cho
+            toàn bộ hệ thống tưới tự động 5 hecta. Rất hài lòng về chất lượng!"</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">PH</div>
+            <div>
+              <strong>Phạm Minh Hoàng</strong>
+              <span>Chủ trang trại – Hà Tĩnh</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Nhà tôi ở vùng hay bị cúp nước, khổ lắm. Khoan giếng xong là thoải mái hẳn. Đội thợ làm nhanh,
+            dọn dẹp sạch sẽ, không làm bẩn nhà. Bảo hành thực sự uy tín."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MT</div>
+            <div>
+              <strong>Mai Thanh Thủy</strong>
+              <span>Hộ gia đình – Ninh Bình</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING HINT ===== -->
+  <section id="pricing" class="section section-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow">Bảng giá tham khảo</div>
+        <h2 class="section-title">Chi Phí Rõ Ràng – Không Bất Ngờ</h2>
+        <p class="section-sub">Giá thực tế phụ thuộc địa hình – liên hệ để được báo giá chính xác</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <div class="pricing-icon">🏠</div>
+          <h3>Hộ Gia Đình</h3>
+          <div class="price-range">Từ <strong>3 – 8 triệu</strong></div>
+          <ul>
+            <li>✓ Sâu 30–60m</li>
+            <li>✓ Máy bơm 750W</li>
+            <li>✓ Lọc thô cơ bản</li>
+            <li>✓ Bảo hành 5 năm</li>
+          </ul>
+          <a href="tel:0962873986" class="btn btn-outline">Nhận Báo Giá</a>
+        </div>
+        <div class="pricing-card featured fade-in">
+          <div class="pricing-badge">Phổ biến nhất</div>
+          <div class="pricing-icon">🌿</div>
+          <h3>Nông Nghiệp</h3>
+          <div class="price-range">Từ <strong>8 – 20 triệu</strong></div>
+          <ul>
+            <li>✓ Sâu 60–100m</li>
+            <li>✓ Máy bơm 1.5–3kW</li>
+            <li>✓ Lọc phèn chuyên sâu</li>
+            <li>✓ Bảo hành 5 năm</li>
+          </ul>
+          <a href="tel:0962873986" class="btn btn-cta">Nhận Báo Giá</a>
+        </div>
+        <div class="pricing-card fade-in">
+          <div class="pricing-icon">🏭</div>
+          <h3>Công Nghiệp</h3>
+          <div class="price-range">Từ <strong>20 triệu+</strong></div>
+          <ul>
+            <li>✓ Sâu 100–150m</li>
+            <li>✓ Máy bơm công suất lớn</li>
+            <li>✓ Hệ thống lọc hoàn chỉnh</li>
+            <li>✓ Bảo hành 5 năm</li>
+          </ul>
+          <a href="tel:0962873986" class="btn btn-outline">Nhận Báo Giá</a>
+        </div>
+      </div>
+      <p class="pricing-note fade-in">
+        💡 <strong>Lưu ý:</strong> Giá trên chỉ mang tính tham khảo. Báo giá thực tế được xác định sau khi khảo sát tại
+        chỗ, <strong>hoàn toàn miễn phí</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-content fade-in">
+          <div class="section-eyebrow" style="color: var(--accent);">Liên hệ ngay</div>
+          <h2 class="section-title" style="color:#fff;">Sẵn Sàng Hỗ Trợ Bạn 7/7</h2>
+          <p style="color: rgba(255,255,255,0.75); margin-bottom: 2rem; font-size: 1.1rem;">
+            Đừng để thiếu nước làm khó cuộc sống của bạn thêm một ngày nào nữa.<br />
+            Gọi ngay – tư vấn miễn phí, khảo sát miễn phí, báo giá trong ngày.
+          </p>
+          <div class="contact-methods">
+            <a href="tel:0962873986" class="contact-method">
+              <div class="contact-method-icon phone-icon">📞</div>
+              <div>
+                <span class="contact-method-label">Điện thoại / Zalo</span>
+                <span class="contact-method-value">0962 873 986</span>
+              </div>
+            </a>
+            <a href="tel:0962873986" class="contact-method">
+              <div class="contact-method-icon phone-icon">📞</div>
+              <div>
+                <span class="contact-method-label">Hotline hỗ trợ</span>
+                <span class="contact-method-value">0962 873 986</span>
+              </div>
+            </a>
+            <div class="contact-method no-link">
+              <div class="contact-method-icon">📍</div>
+              <div>
+                <span class="contact-method-label">Địa chỉ văn phòng</span>
+                <span class="contact-method-value">Thôn 1, Vĩnh Hưng, Vĩnh Lộc, Thanh Hoá</span>
+              </div>
+            </div>
+            <div class="contact-method no-link">
+              <div class="contact-method-icon">🕐</div>
+              <div>
+                <span class="contact-method-label">Giờ làm việc</span>
+                <span class="contact-method-value">7:00 – 21:00 (Thứ 2 – Chủ Nhật)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta-box fade-in">
+          <h3>Nhận Tư Vấn Ngay Hôm Nay</h3>
+          <p>Gọi hoặc nhắn tin – chúng tôi phản hồi trong vòng 5 phút</p>
+          <a href="tel:0962873986" class="btn btn-cta btn-xl">
+            📞 0962 873 986
+          </a>
+          <a href="https://zalo.me/0962873986" class="btn btn-zalo btn-xl" target="_blank" style="margin-top: 1rem;">
+            <img
+              src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
+              alt="Zalo" width="24" height="24" />
+            Nhắn Zalo Ngay
+          </a>
+          <div class="urgency-text">⚡ Thi công trong ngày – Đặt lịch ngay kẻo hết slot!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">💧</div>
+          <div>
+            <span class="logo-brand">Khoan Giếng</span>
+            <span class="logo-tagline">Sạch &amp; Bền</span>
+          </div>
+        </div>
+        <p>Dịch vụ khoan giếng nước ngầm uy tín tại miền Trung. Thi công nhanh, bảo hành dài hạn, giá minh bạch.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Dịch vụ</h4>
+        <ul>
+          <li><a href="#">Khoan giếng hộ gia đình</a></li>
+          <li><a href="#">Khoan giếng nông nghiệp</a></li>
+          <li><a href="#">Khoan giếng công nghiệp</a></li>
+          <li><a href="#">Lắp đặt hệ thống lọc nước</a></li>
+          <li><a href="#">Bảo trì sửa chữa giếng</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Khu vực phục vụ</h4>
+        <ul>
+          <li><a href="#">Thanh Hoá</a></li>
+          <li><a href="#">Ninh Bình</a></li>
+          <li><a href="#">Hà Nam</a></li>
+          <li><a href="#">Nghệ An</a></li>
+          <li><a href="#">Hà Nội & các tỉnh lân cận</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Liên hệ</h4>
+        <p><a href="tel:0962873986">📞 0962 873 986</a></p>
+        <p><a href="tel:0962873986">📞 0962 873 986</a></p>
+        <p>📍 Thôn 1, Vĩnh Hưng, Vĩnh Lộc, Thanh Hoá</p>
+        <p>🕐 7:00 – 18:00 | Thứ 2 – CN</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Khoan Giếng Sạch & Bền. Bảo lưu mọi quyền.</p>
+        <p>Cam kết chất lượng – Uy tín hơn 15 năm</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-buttons">
+    <a href="tel:0962873986" class="float-btn float-call" aria-label="Gọi điện">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6.16 6.16l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+      <span class="float-tooltip">Gọi ngay</span>
+    </a>
+    <a href="https://zalo.me/0962873986" class="float-btn float-zalo" target="_blank" aria-label="Zalo">
+      <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
+        alt="Zalo" width="28" height="28" />
+      <span class="float-tooltip">Chat Zalo</span>
+    </a>
+  </div>
+
+  <!-- MOBILE BOTTOM CTA BAR -->
+  <div class="mobile-cta-bar">
+    <a href="tel:0962873986" class="mobile-cta-btn call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6.16 6.16l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+      <span>Gọi Ngay</span>
+    </a>
+    <a href="https://zalo.me/0962873986" class="mobile-cta-btn zalo" target="_blank">
+      <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
+        alt="Zalo" width="20" height="20" />
+      <span>Zalo</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
